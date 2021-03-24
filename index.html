@@ -17,13 +17,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+
+        h1 {
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 200;
+        }
+
+        p {
+            font-family: 'Kanit';
+            font-weight: normal;
+            color: #797979 !important;
+        }
+
+        .fa-2x {
+            font-size: 19px !important;
+        }
+
+        #home {
+            margin-top: 50px;
+            height: 100vh;
+        }
+
+        .header-corner {
+            width: 35%;
+            position: absolute;
+            left: -20px;
+            z-index: -1;
+        }
+
+        .header-corner-bot {
+            width: 15%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        @media (max-width: 767px) {
+
+            .header-corner,
+            .header-corner-bot {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">NIKAHAN YUK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -39,38 +95,47 @@
                         <a class="nav-link" href="#">Fitur</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Tema</a>
+                        <a class="nav-link" href="#">Tema Undangan</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Harga</a>
+                    <li class="nav-item mx-2 me-3">
+                        <a class="nav-link" href="#">Kotak Cincin</a>
                     </li>
                     <li class="nav-item mt-2">
-                        <a href="#"><i class="fab fa-instagram fa-1x ms-5"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp fa-1x ms-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x ms-2"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp fa-2x ms-3"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div id="home" class="container-fluid">
+        <img src="assets/img/header-corner.png" alt="header" class="header-corner">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 my-auto">
-                    <h1>NIKAHAN YUK</h1>
-                    <h2>Buat & Abadikan Pernikahan Anda Lebih Berharga</h2>
-                    <p>Pernikahan adalah upacara pengikatan janji nikah yang dirayakan atau dilaksanakan oleh dua orang
+            <div class="row flex-column-reverse flex-lg-row">
+                <div class="col-md-6 text-xs-center my-auto text-center">
+                    <h1 class="mt-5 animate__animated animate__zoomIn animate__slower animate__delay-1s">NIKAHAN YUK
+                    </h1>
+                    <h2 class="animate__animated animate__zoomIn animate__slower animate__delay-2s">Buat & Abadikan
+                        Pernikahan Anda Lebih
+                        Berharga</h2>
+                    <p class="animate__animated animate__zoomIn animate__slower animate__delay-3s">Pernikahan adalah
+                        upacara pengikatan
+                        janji nikah yang
+                        dirayakan atau dilaksanakan oleh dua orang
                         dengan maksud meresmikan ikatan perkawinan secara norma agama, norma hukum, dan norma sosial.
                     </p>
-                    <div class="mt-4">
+                    <div class="mt-5 animate__animated animate__zoomIn animate__slower animate__delay-4s">
                         <a href="#" class="btn btn-circle btn-primary">Undangan Digital</a>
-                        <a href="#" class="btn btn-circle btn-success">Kotak Cincin</a>
+                        <a href="#" class="btn btn-circle btn-success mx-3">Kotak Cincin</a>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/img/header.png" alt="Ngantenan Yuk" width="100%">
+                    <img src="assets/img/header.png" alt="Ngantenan Yuk" width="100%"
+                        class="mt-3 animate__animated animate__zoomIn animate__slower">
                 </div>
             </div>
         </div>
+        <img src="assets/img/header-corner-bot.png" alt="header" class="header-corner-bot">
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
