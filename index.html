@@ -50,7 +50,8 @@
 
         #home {
             margin-top: 50px;
-            height: 100vh;
+            height: auto;
+            padding-bottom: 50px;
         }
 
         .header-corner {
@@ -66,6 +67,19 @@
             right: 0;
             bottom: 0;
             z-index: -1;
+        }
+
+        #fitur {
+            height: auto;
+            background: #D0E3F2;
+        }
+
+        #fitur .card {
+            border-radius: 20px;
+        }
+
+        .card-fitur img {
+            height: 70px;
         }
 
         @media (max-width: 767px) {
@@ -136,6 +150,45 @@
             </div>
         </div>
         <img src="assets/img/header-corner-bot.png" alt="header" class="header-corner-bot">
+    </div>
+    <div id="fitur" class="container-fluid">
+        <div class="container">
+            <div class="row p-5 text-center g-2">
+                <h2>Fitur</h2>
+                <div class="col-md-3">
+                    <div class="card shadow card-fitur">
+                        <div class="card-body">
+                            <img src="assets/img/mobile.png" alt="mobile" width="30%">
+                            <h6>Web Mobile</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow card-fitur">
+                        <div class="card-body">
+                            <img src="assets/img/realtime.png" alt="mobile" width="30%">
+                            <h6>Ucapan Real-Time</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow card-fitur">
+                        <div class="card-body">
+                            <img src="assets/img/maps.png" alt="mobile" width="30%">
+                            <h6>Denah</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow card-fitur">
+                        <div class="card-body">
+                            <img src="assets/img/galeri.png" alt="mobile" width="30%">
+                            <h6>Galeri</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
