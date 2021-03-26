@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@700&display=swap');
+@font-face {
+    font-family: "welcome-title";
+    src: url("../font/AnyerBeach-BW5nd.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "p";
+    src: url("../font/break\ light\ fill.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "home-title";
+    src: url("../font/SignatriaRegular-VG7nZ.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "page-title";
+    src: url("../font/DeckledRegular-jEmqM.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: "card-title";
+    src: url("../font/BelgethaRegular-VG776.ttf")format("truetype");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url('../img/bg.jpg');
+    font-size: 17px;
+    font-family: "p";
+    font-weight: bold;
+    color: #2c2c2a;
+}
+
+#home {
+    margin: -10px;
+    height: 100vh;
+    background: url("../img/bg-grid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#home .bg {
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.bg-desktop {
+    display: none;
+}
+
+.bg-mobile {
+    display: block;
+}
+
+.welcome-col {
+    padding: 30% 10px 0px 10px;
+    margin-left: 10px;
+}
+
+.welcome-title {
+    font-family: 'Satisfy', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 45px
+}
+
+.welcome-couple {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 30px;
+}
+
+.home-col {
+    padding: 50px 10px 60px 10px;
+    margin-left: 0px;
+}
+
+.home-title {
+    font-family: "welcome-title";
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 70px;
+}
+
+.home-couple {
+    margin-top: -30px;
+    font-family: "welcome-title";
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 60px;
+}
+
+.home-date {
+    font-family: "home-title";
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 100;
+}
+
+.page-header {
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+#couple {
+    height: auto;
+    margin-top: 0%;
+    border-radius: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    padding: 50px 10px 100px 10px;
+}
+
+#event {
+    position: relative;
+    border-radius: 20px;
+    height: auto;
+    padding: 0 10px;
+    margin-top: -5%;
+    padding: 50px 10px;
+    z-index: 3;
+}
+
+.countdown {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 0;
+    margin-top: -10%;
+    letter-spacing: 3px;
+}
+
+.text-countdown span {
+    color: #533938;
+    font-size: 35px;
+    font-family: 'card-title';
+    font-weight: bold;
+}
+
+.img-event {
+    padding: 0 10%;
+}
+
+#doa {
+    background: #4964c5;
+    color: white;
+    padding: 50px 20px 100px 20px;
+    text-align: center;
+    margin-top: -20px;
+    margin: -10px;
+    z-index: 4;
+}
+
+#maps {
+    position: relative;
+    border-radius: 30px 30px 0 0;
+    padding: 50px 10px 50px 10px;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+#ucapans {
+    height: auto;
+    border-radius: 20px;
+    z-index: 2;
+    margin-top: -20px;
+    padding: 50px 10px 50px 10px;
+    position: relative;
+}
+
+.list-ucapan {
+    padding: 10px 20px;
+    height: 430px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    border: 1px solid #dedede;
+}
+
+.list-ucapan h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -5px !important;
+}
+
+.list-ucapan small {
+    font-size: 13px;
+    color: rgb(139, 139, 253);
+}
+
+.list-ucapan p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.img-ucapan {
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 0%;
+}
+
+#gallery {
+    height: auto;
+    margin-top: -20px;
+    border-radius: 20px;
+    padding: 50px 10px 30px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.primary-menu {
+    color: #533938;
+    cursor: pointer;
+    /* background: #4964c5; */
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.primary-menu:hover {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.welcome {
+    padding: 0 10%;
+    z-index: 3;
+}
+
+.welcome-img {
+    position: relative;
+    width: 70%;
+    margin-top: -60%;
+    z-index: -1;
+}
+
+.welcome-bg {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    z-index: -5;
+}
+
+.modal {
+    background: url('../img/bg-grit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.audio-button {
+    position: fixed;
+    z-index: 99999;
+    top: 2%;
+    right: 2%
+}
+
+.btn-circle {
+    border-radius: 50px;
+    padding-right: 12px;
+    padding-left: 12px;
+    background: rgb(218, 205, 136);
+    border: 1px gold;
+}
+
+small {
+    font-size: 16px;
+}
+
+.mobile-container {
+    width: 450px;
+    margin: auto;
+    margin-top: -10px;
+}
+
+.modal-content {
+    border: none !important;
+}
+
+.menu-bottom {
+    border: 2px solid #d6ccb6;
+    width: 460px;
+    background: url('../img/bg.jpg');
+    padding: 0 12px;
+    position: fixed;
+    margin-bottom: 0px;
+    margin: -5px;
+    bottom: 0;
+    z-index: 999;
+}
+
+.top-corner {
+    position: absolute;
+    width: 25%;
+    margin-left: -20px;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.bot-corner {
+    display: none;
+}
+
+.card-wedding {
+    border: 4px solid #918354;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20%;
+}
+
+.frame-col {
+    text-align: center;
+    width: 100%;
+    padding: 10% 10% 0 10%;
+}
+
+.frame-text {
+    margin-top: 30%;
+    margin-bottom: -95%;
+    color: #414040;
+}
+
+.frame-text h1 {
+    font-family: "page-title";
+    font-size: 60px;
+}
+
+.frame-text h2 {
+    color: #252525;
+    font-weight: bold;
+    margin: -1% 0;
+}
+
+.frame {
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'page-title';
+}
+
+.btn-wedding {
+    position: relative;
+    padding: 5px 20px;
+    border: 2px solid #918354;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #533938;
+    font-size: 16px;
+    z-index: 999;
+    font-weight: bold;
+}
+
+.btn-wedding:hover {
+    border: 2px solid #533938;
+    background: #533938;
+    color: white;
+}
+
+.gallery-col {
+    width: 50%;
+    height: 100%;
+}
+
+.gallery-img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .2s;
+    width: 100%;
+}
+
+.gallery-img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+#waiting {
+    width: 100%;
+    padding-top: 10%;
+}
+
+.form-control {
+    border: 2px solid #918354;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.primary-menu:hover {
+    box-shadow: 1px 1px;
+    background: #ffffff;
+    border-radius: 0px;
+}
+
+.couple-font {
+    font-family: "home-title";
+    font-size: 35px;
+    color: #E09824;
+    text-shadow: 1px 1px #E09824;
+}
+
+.card-header {
+    background: url("../img/bg.jpg");
+}
+
+.card-body h3 {
+    font-family: "card-title";
+    font-weight: 100;
+    font-size: 30px;
+    color: #333333;
+}
+
+.card-body {
+    background: url("../img/bg.jpg");
+}
+
+@media only screen and (max-width: 800px) and (min-width: 0px) {
+    .home-col {
+        padding: 60px 10px 60px 10px;
+        margin-left: 0px;
+    }
+    .welcome-col {
+        margin-top: -30px;
+    }
+    .mobile-container {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-bottom {
+        width: 100%;
+        margin-left: -12px;
+    }
+    .top-corner {
+        position: absolute;
+        width: 70%;
+        margin-left: -20px;
+        margin-top: -10px;
+        z-index: 1;
+    }
+    .bot-corner {
+        display: block;
+        position: absolute;
+        width: 70%;
+        margin-top: -55%;
+        right: 0;
+        z-index: 1;
+    }
+    #waiting {
+        width: 100%;
+        padding-top: 70%;
+    }
+}

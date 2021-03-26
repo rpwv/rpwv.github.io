@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- <meta property="og:type" content="profile">
+    <meta property="og:title" content="The Wedding of Hafidz & Ismi">
+    <meta property="og:url" content="our-wedding.github.io/home/u/hafidz-ismi/?n=Tamu-Undangan">
+    <meta name="description" content="Spesial mengundang anda untuk menghadiri ngunduh mantu pernikahan kami." />
+    <meta property="og:image" content="assets/img/photo/p-4.jpeg"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/icons/rings.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/tema-2.css">
+</head>
+
+<body>
+
+    <!-- Waiting  -->
+    <div id="waiting" class="text-center">
+        <img src="assets/img/loading.gif" width="20%" class="mb-3">
+        <h4>Tunggu Sebentar</h4>
+    </div>
+
+    <!-- buka undangan  -->
+    <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static" style="background: none;">
+        <div class="modal-dialog" role="document">
+            <div class="mobile-container">
+                <div data-aos="zoom-in">
+                    <div class="card-wedding mx-2">
+                        <img src="assets/img/corner.png" class="top-corner">
+                        <div data-aos="zoom-in">
+                            <div class="text-center py-5">
+                                <h3 class="home-title animate__animated animate__zoomIn animate__delay-2s"
+                                    style="margin-bottom:10%;">
+                                    The Wedding
+                                    of
+                                </h3>
+                                <div class="welcome-col" style="z-index: 2;" id="title">
+                                    <h1
+                                        class="home-couple home-left animate__animated animate__zoomIn animate__delay-2s">
+                                        H
+                                    </h1>
+                                    <h3 class="animate__animated animate__zoomIn animate__delay-2s"><b>&</b></h3>
+                                    <h1 class="home-couple home-right animate__animated animate__zoomIn animate__delay-2s"
+                                        style=" margin-top:-5%;">I
+                                    </h1>
+                                    <img src=" assets/img/circle.png"
+                                        class="welcome-img  animate__animated animate__zoomIn animate__delay-1s">
+                                    <h5 class="home-date animate__animated animate__zoomIn animate__delay-3s">-
+                                        Ahad, 25
+                                        Juli
+                                        2021 -</h5>
+                                    <div class="px-4 animate__animated animate__zoomIn animate__delay-4s">
+                                        <div class="card shadow mt-3" style="z-index: 3;">
+                                            <div class="card-body"
+                                                style="font-family: p; background: url('assets/img/bg.jpg');">
+                                                Kepada Yth: Bp/Ibu/Sdr/i :
+                                                <h5 id="name" style="font-family: page-title;"></h5>
+                                                <small>Di Tempat</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn-wedding mt-3 mb-4 animate__animated animate__zoomIn animate__delay-5s"
+                                        data-dismiss="modal" id="bukaTombol" style="z-index: 3;">
+                                        Buka Undangan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/img/bot-corners.png" class="bot-corner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/new-index.js"></script>
+    <!-- <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/audio.js"></script>
+    <script src="assets/js/img.js"></script>
+    <script src="assets/js/url-name.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
+        authDomain: "wedding-9d89a.firebaseapp.com",
+        projectId: "wedding-9d89a",
+        storageBucket: "wedding-9d89a.appspot.com",
+        messagingSenderId: "68200932798",
+        appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
+        measurementId: "G-SV5Z9XMN9K"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.database()
+    const blogRef = db.ref('tamu').on('value', handleSuccess, handleError)
+
+    function listTamu() {
+        let tamu = db.ref("tamu/").orderByChild("order");
+        // Dapatkan referensi table
+        var list_ucapan = document.getElementById("list-ucapan")
+
+        // Memuat Data
+        tamu.on("child_added", function (data, prevChildKey) {
+            var datas = data.val();
+            $(".list-ucapan").append(
+                "<div div class='list'>" +
+                "<div class='row g-0'>" +
+                "<div class='col-2 text-center'>" +
+                "<img src='assets/img/robot/" + datas.avatar + "' class='img-ucapan'/>" +
+                "</div>" +
+                "<div class='col-10'>" +
+                "<h6 class='tamuNama'>" + datas.nama + "</h6>" +
+                "<small class='tamuTanggal'>" + datas.tgl_kirim + "</small>" +
+                "<hr style='margin:0px;'>" +
+                "<p class='tamuUcapan'>" +
+                datas.ucapan +
+                "</p>" +
+                "</div>" +
+                " </div>" +
+                "</div>"
+            )
+        });
+    }
+
+    listTamu();
+
+
+    function handleSuccess(items) {
+        // console.log(items.val())
+    }
+
+    function handleError(erro) {
+        console.log(error)
+    }
+
+    function userId() {
+        let tamus = db.ref("tamu/").limitToLast(1);
+        tamus.on("child_added", function (data, prevChildKey) {
+            let id = parseInt(data.key) + 1
+            $("#userId").val(id)
+            let order = parseInt(data.val().order) - 1
+            $("#order").val(order)
+        });
+    }
+
+    userId();
+
+    function avatar() {
+        let avatar = ['rb-1.png', 'rb-2.png', 'rb-3.png', 'rb-4.png']
+        var rand = avatar[(Math.random() * avatar.length) | 0]
+        return rand
+    }
+
+    function writeUserData(userId, nama, ucapan, date, newAvatar, order) {
+        if (ucapan == "" || nama == "") {
+            $("#alertTitle").html("Konfirmasi Ucapan")
+            $("#alert").html("Silahkan masukan nama & ucapan terlebih dahulu.")
+            $("#alertMsg").modal("show")
+            // alert("Silahkan masukan ucapan terlebih dahulu.")
+        } else {
+            db.ref('tamu/' + userId).set({
+                nama: nama,
+                tgl_kirim: date,
+                ucapan: ucapan,
+                order: parseInt(order),
+                avatar: newAvatar
+            }, (error) => {
+                if (error) {
+                    $("#alertTitle").html("Konfirmasi Ucapan")
+                    $("#alert").html("Ucapan anda gagal dikirim.")
+                    $("#alertMsg").modal("show")
+                } else {
+                    $("#alertTitle").html("Konfirmasi Ucapan")
+                    $("#alert").html(nama + ", Ucapan anda berhasil dikirim. <br> Terima Kasih atas kunjungan anda.")
+                    $("#alertMsg").modal("show")
+                    $("#form-ucapan").hide()
+                }
+            });
+        }
+    }
+
+
+    $("#btn-submit").click(function () {
+        let date = new Date();
+        let y = date.getFullYear();
+        let m = date.getMonth() + 1;
+        let d = date.getDate();
+        let h = date.getHours();
+        let min = date.getMinutes();
+        let s = date.getSeconds();
+        let newDate = d + "/" + m + "/" + y + " - " + h + ":" + min + ":" + s
+
+        let n = $('#namaTamu').val()
+        let u = $('#ucapan').val()
+        let id = $('#userId').val();
+        let order = $('#order').val();
+        let newAvatar = avatar()
+        writeUserData(id, n, u, newDate, newAvatar, order)
+    });
+</script>
+
+</html>
