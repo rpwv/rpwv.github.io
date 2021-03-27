@@ -339,7 +339,7 @@ small {
     border: 4px solid #1b3d7044;
     margin-top: 10px;
     border-radius: 20px;
-    margin-bottom: 20%;
+    margin-bottom: 40%;
 }
 
 .frame-col {
@@ -376,18 +376,18 @@ small {
 .btn-wedding {
     position: relative;
     padding: 5px 20px;
-    border: 2px solid #918354;
+    border: 2px solid #2e429e;
     text-decoration: none;
     border-radius: 15px;
-    color: #533938;
+    color: #313235;
     font-size: 16px;
     z-index: 999;
     font-weight: bold;
 }
 
 .btn-wedding:hover {
-    border: 2px solid #533938;
-    background: #533938;
+    border: 2px solid #2e429e;
+    background: #2e429e;
     color: white;
 }
 
@@ -450,7 +450,50 @@ small {
     background: url("../img/bg.jpg");
 }
 
-@media only screen and (max-width: 800px) and (min-width: 0px) {
+@media only screen and (max-width: 375px) and (min-width: 0px) {
+    .home-col {
+        padding: 60px 10px 60px 10px;
+        margin-left: 0px;
+    }
+    .welcome-img {
+        position: relative;
+        width: 50%;
+        margin-top: -75%;
+        z-index: -1;
+    }
+    .welcome-col {
+        margin-top: -30px;
+    }
+    .mobile-container {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-bottom {
+        width: 100%;
+        margin-left: -12px;
+    }
+    .top-corner {
+        position: absolute;
+        width: 70%;
+        right: 0px;
+        margin-top: -20px;
+        z-index: 1;
+    }
+    .bot-corner {
+        display: block;
+        position: absolute;
+        width: 60%;
+        margin-top: -50%;
+        left: 0;
+        z-index: 0;
+    }
+    #waiting {
+        width: 100%;
+        padding-top: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 376px) {
     .home-col {
         padding: 60px 10px 60px 10px;
         margin-left: 0px;
@@ -489,6 +532,6 @@ small {
     }
     #waiting {
         width: 100%;
-        padding-top: 70%;
+        padding-top: 60%;
     }
 }

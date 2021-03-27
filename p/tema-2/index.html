@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="assets/css/tema-2.css">
+    <link rel="stylesheet" href="assets/css/new-tema-2.css">
 </head>
 
 <body>
@@ -36,9 +36,9 @@
     </div>
 
     <!-- buka undangan  -->
-    <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static" style="background: none;">
+    <div class="modal fadeInDown" id="bukaUndangan">
         <div class="modal-dialog" role="document">
-            <div class="mobile-container">
+            <div class="modal-content mobile-container" style="background: none;">
                 <div data-aos="zoom-in">
                     <div class="card-wedding mx-2">
                         <img src="assets/img/corner.png" class="top-corner">
@@ -76,13 +76,13 @@
                                     </div>
                                     <button
                                         class="btn-wedding mt-3 mb-4 animate__animated animate__zoomIn animate__delay-5s"
-                                        data-dismiss="modal" id="bukaTombol" style="z-index: 3;">
+                                        data-dismiss="modal" id="bukaTombol">
                                         Buka Undangan
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <img src="assets/img/bot-corners.png" class="bot-corner">
+                        <img src="assets/img/bot-corners.png" class="bot-corner" style="z-index: -1;">
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/new-index.js"></script>
+    <script src="assets/js/index.js"></script>
     <!-- <script src="assets/js/countdown.js"></script>
     <script src="assets/js/audio.js"></script>
     <script src="assets/js/img.js"></script>
