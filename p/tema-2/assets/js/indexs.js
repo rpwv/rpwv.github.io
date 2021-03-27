@@ -1,8 +1,8 @@
 $(document).ready(function () {
     AOS.init();
-    // $("#content").hide();
-    $('#bukaUndangan').modal("show");
-    $('#waiting').hide();
+    $("#content").hide();
+    // $('#bukaUndangan').modal("show");
+    // $('#waiting').hide();
     setTimeout(function () {
         $('#waiting').show();
     }, 3000);
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 $("#bukaTombol").click(function () {
     $("#content").fadeIn(3000);
-    $('#bukaUndangan').modal("hide");
+    $('#bukaUndangan').hide();
     var x = document.getElementById("playAudio");
     var y = document.getElementById("playButton");
     var z = document.getElementById("stopButton");
