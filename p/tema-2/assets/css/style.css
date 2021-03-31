@@ -436,7 +436,7 @@ small {
 }
 
 .card-header {
-    background: url("../img/bg.jpg");
+    background: url("../img/bg.png");
 }
 
 .card-body h3 {
@@ -447,7 +447,7 @@ small {
 }
 
 .card-body {
-    background: url("../img/bg.jpg");
+    background: url("../img/bg.png");
 }
 
 @media only screen and (max-width: 375px) and (min-width: 0px) {
