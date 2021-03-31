@@ -71,6 +71,7 @@
         }
 
         #fitur {
+            padding: 0 20%;
             height: auto;
             background: #D0E3F2;
         }
@@ -80,11 +81,19 @@
         }
 
         .card-fitur img {
+            width: 70px;
             height: 70px;
         }
 
         #tema {
             height: auto;
+        }
+
+        .tema {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: 15px;
         }
 
 
@@ -160,36 +169,52 @@
     <div id="fitur" class="container-fluid">
         <div class="container">
             <div class="row p-5 text-center g-2">
-                <h2>Fitur</h2>
-                <div class="col-md-3">
+                <h2>Fitur Undangan</h2>
+                <div class="col-md-4">
                     <div class="card shadow card-fitur">
                         <div class="card-body">
-                            <img src="assets/img/mobile.png" alt="mobile" width="30%">
+                            <img src="assets/img/mobile.png" class="img-fitur">
                             <h6>Web Mobile</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card shadow card-fitur">
                         <div class="card-body">
-                            <img src="assets/img/realtime.png" alt="mobile" width="30%">
+                            <img src="assets/img/realtime.png" class="img-fitur">
                             <h6>Ucapan Real-Time</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card shadow card-fitur">
                         <div class="card-body">
-                            <img src="assets/img/maps.png" alt="mobile" width="30%">
+                            <img src="assets/img/maps.png" class="img-fitur">
                             <h6>Denah</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card shadow card-fitur">
                         <div class="card-body">
-                            <img src="assets/img/galeri.png" alt="mobile" width="30%">
+                            <img src="assets/img/galeri.png" class="img-fitur">
                             <h6>Galeri</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow card-fitur">
+                        <div class="card-body">
+                            <img src="assets/img/tamu.png" class="img-fitur">
+                            <h6>Custom Nama Tamu</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow card-fitur">
+                        <div class="card-body">
+                            <img src="assets/img/musik.png" class="img-fitur">
+                            <h6>Musik</h6>
                         </div>
                     </div>
                 </div>
@@ -207,10 +232,12 @@
                                 <div class="card mx-2">
                                     <div class="card-body">
                                         <h4>Tema 1</h4>
-                                        <img src="assets/img/5019443.jpg" alt="tema 1" width="100%">
+                                        <img src="p/tema-1/tema-1.png" alt="tema 1" width="100%" class="tema">
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-sm btn-primary mx-1">Lihat Demo</a>
-                                            <a href="#" class="btn btn-sm btn-secondary mx-1">Pesan Sekarang</a>
+                                            <a href="p/tema-1/" target="_blank"
+                                                class="btn btn-sm btn-primary mx-1">Lihat Demo</a>
+                                            <a href="http://wa.me/628985091005" target="_blank"
+                                                class="btn btn-sm btn-secondary mx-1">Pesan Sekarang</a>
                                         </div>
                                     </div>
                                 </div>
@@ -219,22 +246,12 @@
                                 <div class="card mx-2">
                                     <div class="card-body">
                                         <h4>Tema 2</h4>
-                                        <img src="assets/img/5019443.jpg" alt="tema 1" width="100%">
+                                        <img src="p/tema-2/tema-2.png" alt="tema 2" width="100%" class="tema">
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-sm btn-primary mx-1">Lihat Demo</a>
-                                            <a href="#" class="btn btn-sm btn-secondary mx-1">Pesan Sekarang</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="card mx-2">
-                                    <div class="card-body">
-                                        <h4>Tema 3</h4>
-                                        <img src="assets/img/5019443.jpg" alt="tema 1" width="100%">
-                                        <div class="mt-4">
-                                            <a href="#" class="btn btn-sm btn-primary mx-1">Lihat Demo</a>
-                                            <a href="#" class="btn btn-sm btn-secondary mx-1">Pesan Sekarang</a>
+                                            <a href="p/tema-2/" target="_blank"
+                                                class="btn btn-sm btn-primary mx-1">Lihat Demo</a>
+                                            <a href="http://wa.me/628985091005" target="_blank"
+                                                class="btn btn-sm btn-secondary mx-1">Pesan Sekarang</a>
                                         </div>
                                     </div>
                                 </div>
@@ -250,11 +267,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script>
     new Splide('.splide', {
-        type: 'loop',
-        padding: {
-            right: '5%',
-            left: '5%',
-        },
+        // type: 'loop',
+        // padding: {
+        //     right: '5%',
+        //     left: '5%',
+        // },
         perPage: 3,
         breakpoints: {
             '600': {
