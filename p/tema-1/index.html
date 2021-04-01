@@ -377,7 +377,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="alertTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" id="closeButton">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -410,13 +410,13 @@
 
 <script>
     var firebaseConfig = {
-        apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
-        authDomain: "wedding-9d89a.firebaseapp.com",
-        projectId: "wedding-9d89a",
-        storageBucket: "wedding-9d89a.appspot.com",
-        messagingSenderId: "68200932798",
-        appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
-        measurementId: "G-SV5Z9XMN9K"
+        apiKey: "AIzaSyBP3pheGbGrrRT_NIo0cu83kt39TrIzpRk",
+        authDomain: "our-wedding-53fc9.firebaseapp.com",
+        projectId: "our-wedding-53fc9",
+        storageBucket: "our-wedding-53fc9.appspot.com",
+        messagingSenderId: "741343521918",
+        appId: "1:741343521918:web:6dcf1808d6c6785e28fc2f",
+        measurementId: "G-GVVFVLP0ZB"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -528,6 +528,10 @@
         let newAvatar = avatar()
         writeUserData(id, n, u, newDate, newAvatar, order)
     });
+
+    $("#closeButton").click(function () {
+        $("#alertMsg").modal("hide");
+    })
 </script>
 
 </html>

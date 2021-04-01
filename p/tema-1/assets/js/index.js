@@ -23,7 +23,7 @@ $("#bukaTombol").click(function () {
     $("#protokol").fadeIn(1000);
     setTimeout(function () {
         $("#protokol").fadeOut(1000);
-    }, 8000);
+    }, 5000);
     $("#content").fadeIn(3000);
     $('#bukaUndangan').modal("hide");
     var x = document.getElementById("playAudio");
