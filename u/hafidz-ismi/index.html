@@ -369,7 +369,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="alertTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" id="closeButton">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -529,6 +529,10 @@
         let newAvatar = avatar()
         writeUserData(id, n, u, newDate, newAvatar, order)
     });
+
+    $("#closeButton").click(function () {
+        $("#alertMsg").modal("hide");
+    })
 </script>
 
 </html>
