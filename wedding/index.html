@@ -191,7 +191,37 @@
                 </div>
                 <img src="../p/tema-1/assets/img/bot-corner.png" class="bot-corner">
             </div>
-            
+            <div class="card-wedding" id="say-page">
+                <img src="assets/img/corner.png" class="top-corner">
+                <div id="ucapans">
+                    <div class="row">
+                        <div class="col-md-12 text-center" id="form-ucapan">
+                            <h3 class="mb-4 page-title pt-3 px-3">Kartu Ucapan</h3>
+                            <div class="form-group text-left px-4">
+                                <input type="text" name="id" id="userId" class="form-control" hidden>
+                                <input type="text" name="order" id="order" class="form-control" hidden>
+                                <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required
+                                    placeholder="Masukan nama anda">
+                            </div>
+                            <div class="form-group text-left mt-2 px-4">
+                                <textarea name="ucapan" id="ucapan" rows="10" class="form-control" required
+                                    placeholder="Masukan ucapan dan doa anda"></textarea>
+                            </div>
+                            <div class="form-group float-right mt-2 px-3">
+                                <button id="btn-submit" class="btn-wedding">Kirim
+                                    Ucapan</button>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 mt-4" data-aos="fade-up" data-aos-offset="0">
+                            <div class="list-ucapan">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/bot-corners.png" class="bot-corner">
+            </div>
             <div class="card-wedding" id="gallery-page">
                 <img src="../p/tema-1/assets/img/corner.png" class="top-corner">
                 <div id="gallery">
@@ -241,6 +271,11 @@
                     <div class="col primary-menu" id="maps-button">
                         <div class="icon-menu">
                             <img src="../p/tema-1/assets/img/icons/map.svg" width="40%">
+                        </div>
+                    </div>
+                     <div class="col primary-menu" id="say-button">
+                        <div class="icon-menu">
+                            <img src="assets/img/icons/wedding-say.png" width="40%">
                         </div>
                     </div>
  
@@ -357,25 +392,15 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
-
 <script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCjuoY1-LZxaXyy76V3NOGuGTg5RSj1G2o",
-    authDomain: "rpwz-b006f.firebaseapp.com",
-    databaseURL: "https://rpwz-b006f-default-rtdb.firebaseio.com",
-    projectId: "rpwz-b006f",
-    storageBucket: "rpwz-b006f.appspot.com",
-    messagingSenderId: "26665397596",
-    appId: "1:26665397596:web:ee11348cae0a668e17a599",
-    measurementId: "G-Q30DWVFTT7"
+    var firebaseConfig = {
+    apiKey: "AIzaSyB0W2e4f4AUa4twNbhSOpgjoj8C8Ee7erI",
+    authDomain: "databuse-19f84.firebaseapp.com",
+    projectId: "databuse-19f84",
+    storageBucket: "databuse-19f84.appspot.com",
+    messagingSenderId: "385649671401",
+    appId: "1:385649671401:web:c8e8cd4593f979b6ac0478",
+    measurementId: "G-0GMJZTE1ZV"
   };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
