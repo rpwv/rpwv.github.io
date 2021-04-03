@@ -9,10 +9,10 @@ function GetURLParameter(sParam) {
     }
 }
 var name = GetURLParameter('n').split("-");
-var finalName = name.replace(/,/g, "  ");
-var sss = finalName.replace("%20"," ");
+var finalName = name.replace(/,/g, "    ");
+var sss = finalName.replace("%20","   ");
 if (name != "") {
-    document.getElementById("name").innerHTML = sss
+    document.getElementById("name").innerHTML = finalName
 } else {
     document.getElementById("name").innerHTML = "Di Tempat"
 }
