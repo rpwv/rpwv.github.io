@@ -10,7 +10,6 @@ function GetURLParameter(sParam) {
 }
 var name = GetURLParameter('n').split("-");
 var finalName = name.replace(/,/g, "    ");
-var sss = finalName.replace("%20","   ");
 if (name != "") {
     document.getElementById("name").innerHTML = finalName
 } else {
