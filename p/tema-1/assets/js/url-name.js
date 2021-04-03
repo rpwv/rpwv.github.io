@@ -8,8 +8,8 @@ function GetURLParameter(sParam) {
         }
     }
 }
-var name = GetURLParameter('n').split(" ");
-var finalName = name.replace(/,/g, "  ");
+var name = GetURLParameter('n').split("-");
+var finalName = name.replace(/%20/g, "  ");
 if (name != "") {
     document.getElementById("name").innerHTML = finalName
 } else {
