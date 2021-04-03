@@ -9,7 +9,7 @@ function GetURLParameter(sParam) {
     }
 }
 var name = GetURLParameter('n').split("-");
-var finalName = name.replace(/,/g, "    ");
+var finalName = name.replace(/,/g, " ");
 if (name != "") {
     document.getElementById("name").innerHTML = finalName
 } else {
